@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79654A6C2B77F87F00FBD55C /* AdventureLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79654A6B2B77F87F00FBD55C /* AdventureLogic.swift */; };
+		79654A702B77F97A00FBD55C /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79654A6F2B77F97A00FBD55C /* Adventure.swift */; };
 		797C12812B7747DB00E8592B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797C12802B7747DB00E8592B /* AppDelegate.swift */; };
 		797C12832B7747DB00E8592B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797C12822B7747DB00E8592B /* SceneDelegate.swift */; };
 		797C12852B7747DB00E8592B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797C12842B7747DB00E8592B /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79654A6B2B77F87F00FBD55C /* AdventureLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureLogic.swift; sourceTree = "<group>"; };
+		79654A6F2B77F97A00FBD55C /* Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
 		797C127D2B7747DB00E8592B /* assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797C12802B7747DB00E8592B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797C12822B7747DB00E8592B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79654A6D2B77F92300FBD55C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				797C12842B7747DB00E8592B /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79654A6E2B77F94300FBD55C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79654A6B2B77F87F00FBD55C /* AdventureLogic.swift */,
+				79654A6F2B77F97A00FBD55C /* Adventure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		797C12742B7747DB00E8592B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		797C127F2B7747DB00E8592B /* assignment5 */ = {
 			isa = PBXGroup;
 			children = (
+				79654A6E2B77F94300FBD55C /* Model */,
 				797C12802B7747DB00E8592B /* AppDelegate.swift */,
 				797C12822B7747DB00E8592B /* SceneDelegate.swift */,
-				797C12842B7747DB00E8592B /* ViewController.swift */,
+				79654A6D2B77F92300FBD55C /* View */,
 				797C12862B7747DB00E8592B /* Main.storyboard */,
 				797C12892B7747DD00E8592B /* Assets.xcassets */,
 				797C128B2B7747DD00E8592B /* LaunchScreen.storyboard */,
@@ -141,6 +163,8 @@
 				797C12852B7747DB00E8592B /* ViewController.swift in Sources */,
 				797C12812B7747DB00E8592B /* AppDelegate.swift in Sources */,
 				797C12832B7747DB00E8592B /* SceneDelegate.swift in Sources */,
+				79654A702B77F97A00FBD55C /* Adventure.swift in Sources */,
+				79654A6C2B77F87F00FBD55C /* AdventureLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

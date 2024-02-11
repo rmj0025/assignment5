@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="x69-2X-4Ob" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-PU-QHY">
+                                <rect key="frame" x="30" y="89" width="333" height="699"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un7-ML-wes">
+                                        <rect key="frame" x="30" y="0.0" width="273" height="430"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="X8m-Uy-bh5">
+                                        <rect key="frame" x="30" y="430" width="273" height="269"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jee-2i-v2R">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="127"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="actionChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Vo-lU-dzy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cPk-EF-7TM">
+                                                <rect key="frame" x="0.0" y="142" width="273" height="127"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="actionChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aC1-ax-5e3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="un7-ML-wes" firstAttribute="leading" secondItem="XAD-PU-QHY" secondAttribute="leading" constant="30" id="PVS-87-C3z"/>
+                                    <constraint firstItem="X8m-Uy-bh5" firstAttribute="leading" secondItem="XAD-PU-QHY" secondAttribute="leading" constant="30" id="Poi-pd-gjy"/>
+                                    <constraint firstAttribute="trailing" secondItem="un7-ML-wes" secondAttribute="trailing" constant="30" id="aKb-dS-e5G"/>
+                                    <constraint firstItem="un7-ML-wes" firstAttribute="height" secondItem="X8m-Uy-bh5" secondAttribute="height" multiplier="1.6" id="j6A-7T-8kV"/>
+                                    <constraint firstAttribute="trailing" secondItem="X8m-Uy-bh5" secondAttribute="trailing" constant="30" id="sEC-2k-Lrf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAD-PU-QHY" secondAttribute="trailing" constant="30" id="2PB-LV-scA"/>
+                            <constraint firstItem="x69-2X-4Ob" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AaL-Su-kBc"/>
+                            <constraint firstItem="XAD-PU-QHY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="COG-AZ-9r7"/>
+                            <constraint firstItem="x69-2X-4Ob" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="J32-sJ-nzP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAD-PU-QHY" secondAttribute="bottom" constant="30" id="SN8-oW-0ds"/>
+                            <constraint firstItem="XAD-PU-QHY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WYV-91-22L"/>
+                            <constraint firstItem="x69-2X-4Ob" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XJR-1G-FDd"/>
+                            <constraint firstAttribute="bottom" secondItem="x69-2X-4Ob" secondAttribute="bottom" id="x2t-SM-eyT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AdventureLabel" destination="un7-ML-wes" id="NKD-TD-jHX"/>
+                        <outlet property="OptionOneButton" destination="Jee-2i-v2R" id="fO2-Zu-YyW"/>
+                        <outlet property="OptionTwoButton" destination="cPk-EF-7TM" id="veA-Du-4yu"/>
+                        <outlet property="background" destination="x69-2X-4Ob" id="k5w-Pk-TvA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="4.9295774647887329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="133.33332824707031" height="266.66665649414062"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
